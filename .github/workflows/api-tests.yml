@@ -49,7 +49,7 @@ jobs:
            -e "./postman/environnement.postman_environment.json" \
            --iteration-data "./postman/iteration.json"\
            -r htmlextra \
-           --reporter-html-extra-export "./raports/RapportNewman.html"
+           --reporter-htmlextra-export "./raports/RapportNewman.html"
 
       - name: upload HTML test report as artifact
 

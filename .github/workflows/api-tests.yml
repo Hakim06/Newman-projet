@@ -1,27 +1,44 @@
-name : newman API Tests
-on: 
+name: Newman API Tests
+
+on:
+
   push:
-    branches: ["main"] 
-jobs:
-  run-api:
+
+    branches: ["main"]
+
+ 
+
+jobs: 
+
+  run-api-tests:
+
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout repository
+
         uses: actions/checkout@v3
 
       - name: Installation de Node js
-        uses: actions/setup-Node@v4
+
+        uses: actions/setup-node@v4
+
         with:
+
           node-version: "18"
 
       - name: Installation des librairies
-        run: npm Installation
+
+        run: npm install 
 
       - name: Lancement du serveur
+
         run: |
+
           nohup node server.js > server.log 2>&1 &
-          sleep 5 
+
+          sleep 5
 
 
     

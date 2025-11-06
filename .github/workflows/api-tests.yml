@@ -41,5 +41,5 @@ jobs:
           sleep 5
 
       - name: Installation de newman + HTML Extra reporter
-       run: npm install -g newman newman-reporter-htmlextra
+        run: npm install -g newman newman-reporter-htmlextra
     

@@ -10,5 +10,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: installation de Node jobs
+        uses: action/setup-Node@4
+        with:
+          node-version: "18"
+
 
     

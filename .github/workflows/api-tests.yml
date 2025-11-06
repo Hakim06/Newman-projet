@@ -59,7 +59,7 @@ jobs:
 
           name: newman-test-report
 
-          path: reports/RapportNewman.html
+          path: raports/RapportNewman.html
 
       - name: Add HTML report link
 
